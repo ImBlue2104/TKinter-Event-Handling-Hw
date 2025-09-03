@@ -8,8 +8,9 @@ root.geometry("400x400")
 
 def imp_info():
     messagebox.showinfo("Read Important" , "This program can only covert Inches into Centimeters!")
-
+#button to trigger message box
 Button(root, text = "Read; Important!!!", fg = 'white', bg='red', relief='sunken', command = imp_info).pack()
+
 #Screen Title
 Label(root, text="Welcome to the Length Conversion App", fg = 'white', bg='black').pack()
 
