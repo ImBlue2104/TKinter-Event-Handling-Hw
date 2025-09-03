@@ -1,4 +1,4 @@
-from tkinter import Tk, Entry, Text, Label, Text, Button
+from tkinter import Tk, Entry, messagebox, Label, Button
 from datetime import date
 
 #Sets Window
@@ -6,8 +6,12 @@ root = Tk()
 root.title("Length Converter App")
 root.geometry("400x400")
 
+def imp_info():
+    messagebox.showinfo("Read Important" , "This program can only covert Inches nto Centimeteres!")
+
+Button(root, text = "Read; Important!!!", fg = 'white', bg='black', relief='sunken', command = imp_info).pack()
 #Screen Title
-Label(root, text="Welcome to the Age Calculator App", fg = 'white', bg='black').pack()
+Label(root, text="Welcome to the Length Conversion App", fg = 'white', bg='black').pack()
 
 #Getting original len fro user
 Label(root, text="Enter Length in Inches to conver to Centimetres:", fg='black', bg='#d0efff').pack()
